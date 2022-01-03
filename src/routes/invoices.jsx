@@ -3,7 +3,7 @@ import { getInvoices } from '../data';
 
 export default function Invoices() {
   let invoices = getInvoices();
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams, setSearchParams] = useSearchParams({ replace: true });
   return (
     <div style={{ display: 'flex' }}>
       <nav
