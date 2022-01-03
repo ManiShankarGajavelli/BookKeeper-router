@@ -10,10 +10,10 @@ let rootElement = document.getElementById('app');
 ReactDOM.render(
   <Router>
     <Routes>
-      <Route path="/" element={<App />} />
-
-      <Route path="/invoices" element={<Invoices />} />
-      <Route path="/expenses" element={<Expenses />} />
+      <Route path="/" element={<App />}>
+        <Route path="/invoices" element={<Invoices />} />
+        <Route path="/expenses" element={<Expenses />} />
+      </Route>
     </Routes>
   </Router>,
   rootElement
