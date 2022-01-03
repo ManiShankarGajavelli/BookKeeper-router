@@ -14,11 +14,11 @@ export default function Invoices() {
       >
         <input
           type="text"
-          value={searchParams.get('filter') || 'find any'}
+          value={searchParams.get('filter') || ''}
           onChange={(event) => {
             let filter = event.target.value;
             if (filter) {
-              setSearchParams(filter);
+              setSearchParams({ filter });
             } else {
               setSearchParams({});
             }
