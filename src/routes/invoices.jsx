@@ -2,6 +2,7 @@ import Link from 'react-router-dom';
 import { getInvoices } from '../data';
 
 export default function Invoices() {
+  let invoices = getInvoices();
   return (
     <div style={{ display: 'flex' }}>
       <nav
