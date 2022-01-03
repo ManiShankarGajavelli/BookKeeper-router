@@ -5,6 +5,7 @@ import App from './App';
 import './main.css';
 import Invoices from './routes/invoices';
 import Expenses from './routes/expenses';
+import Invoice from './routes/invoice';
 
 let rootElement = document.getElementById('app');
 ReactDOM.render(
@@ -21,6 +22,7 @@ ReactDOM.render(
             </main>
           }
         />
+        <Route path=":invoiceId" element={<Invoice />} />
       </Route>
     </Routes>
   </Router>,
