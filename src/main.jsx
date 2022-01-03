@@ -14,6 +14,7 @@ ReactDOM.render(
       <Route path="/" element={<App />}>
         <Route path="/invoices" element={<Invoices />} />
         <Route path="/expenses" element={<Expenses />} />
+        <Route path=":invoiceId" element={<Invoice />} />
         <Route
           path="*"
           element={
@@ -22,7 +23,6 @@ ReactDOM.render(
             </main>
           }
         />
-        <Route path=":invoiceId" element={<Invoice />} />
       </Route>
     </Routes>
   </Router>,
