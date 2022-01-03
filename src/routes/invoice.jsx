@@ -1,8 +1,8 @@
-import { useParams, navigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { getInvoice } from '../data';
 export default function Invoice() {
   let params = useParams();
-  let navigate = navigate();
+  let navigate = useNavigate();
   let invoice = getInvoice(parseInt(params.invoiceId, 10));
   return (
     <main style={{ padding: '1rem' }}>
