@@ -13,7 +13,8 @@ export default function Invoices() {
         }}
       >
         <input
-          value={searchParams.get('filter') || ''}
+          type="text"
+          value={searchParams.get('filter') || 'find any'}
           onChange={(event) => {
             let filter = event.target.name;
             if (filter) {
